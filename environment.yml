@@ -1,0 +1,6 @@
+name: bike-dataviz
+channels:
+  - pyviz
+dependencies:
+  - python=3.6
+  - pyviz
