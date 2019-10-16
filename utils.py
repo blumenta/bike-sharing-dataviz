@@ -50,11 +50,11 @@ def get_all_bike_data():
     contract_names = pd.DataFrame(contracts)['name']
     stations_list = []
     for name in contract_names:
-        print(name)
         try:
             stations = get_stations_in_contract(contract_name=name)
             stations_list.append(stations_to_pandas(stations))
         except:
             print(f"Failed to pull data from {name}")
             pass
+    print("Loaded data from %d out of %d cities"%(len(stations_list),len(contract_names)))
     return pd.concat(stations_list)

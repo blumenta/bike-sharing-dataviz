@@ -10,3 +10,6 @@ Simple dashboard for visualizing bike sharing data.
 {"key": "your_api_key"}
 ```
 You can get an API key from [JCDecaux](https://developer.jcdecaux.com/#/home).
+
+## Serving
+`panel serve main.py`
