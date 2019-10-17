@@ -25,5 +25,5 @@ class BikeStandExplorer(param.Parameterized):
                                                  size=dim('bikes_available_total'),
                                                  color='bikes_available_total',
                                                  cmap='viridis'))
-explorer = BikeStandExplorer(name="Bike Stand Explorer: streaming live from JCDecaux API")
+explorer = BikeStandExplorer(name="Rental Bike Explorer: live parking locations from JCDecaux API")
 panel.Column(explorer, explorer.make_view).servable()
